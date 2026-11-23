@@ -1,0 +1,389 @@
+
+/* =========================================
+   FUTURE VOICE NETWORK
+   ABOUT PAGE
+========================================= */
+
+/* Hero */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 105px 0 100px;
+  background: linear-gradient(115deg, #f5f5f0 0%, #e9eff7 100%);
+  border-bottom: 1px solid #dce3ec;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: -110px;
+  top: -130px;
+  border: 1px solid rgba(23, 74, 139, 0.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 35px rgba(23, 74, 139, 0.025),
+    0 0 0 75px rgba(23, 74, 139, 0.02);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #b18a35;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.hero h1 {
+  max-width: 850px;
+  color: #103765;
+  font-size: clamp(38px, 5.5vw, 65px);
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #174a8b;
+}
+
+.heroContent > p {
+  max-width: 650px;
+  margin-top: 25px;
+  color: #52606d;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.heroLine {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 38px;
+  color: #103765;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.heroLine span {
+  display: block;
+  width: 42px;
+  height: 3px;
+  background: #d5ad54;
+}
+
+/* Our Story */
+
+.story {
+  background: #f5f5f0;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.sectionHeading h2,
+.purposeHeading h2,
+.valuesHeading h2 {
+  color: #103765;
+  font-size: clamp(29px, 3.5vw, 42px);
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.headingLine {
+  display: block;
+  width: 55px;
+  height: 4px;
+  margin-top: 25px;
+  background: #d5ad54;
+}
+
+.storyText {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.storyText p {
+  color: #52606d;
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+/* Mission and Vision */
+
+.purpose {
+  padding: 100px 0;
+  background: linear-gradient(120deg, #103765, #174a8b);
+}
+
+.purposeHeading {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+
+.purposeHeading .eyebrow {
+  color: #e5c779;
+}
+
+.purposeHeading h2 {
+  color: #ffffff;
+}
+
+.purposeHeading > p {
+  max-width: 620px;
+  margin-top: 17px;
+  color: #dce5f0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.purposeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.purposeCard {
+  position: relative;
+  min-height: 260px;
+  padding: 38px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+}
+
+.cardNumber {
+  color: #e5c779;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.purposeCard h3 {
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.purposeCard p {
+  max-width: 450px;
+  margin-top: 15px;
+  color: #e0e8f1;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.cardAccent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65px;
+  height: 4px;
+  background: #d5ad54;
+}
+
+/* Values */
+
+.values {
+  background: #ffffff;
+}
+
+.valuesHeading {
+  max-width: 650px;
+  margin-bottom: 48px;
+}
+
+.valuesHeading > p {
+  margin-top: 16px;
+  color: #52606d;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.valueCard {
+  padding: 28px 24px;
+  background: #f5f5f0;
+  border: 1px solid #e3e8ee;
+  border-radius: 7px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-5px);
+  border-color: #d5ad54;
+  box-shadow: 0 12px 30px rgba(16, 55, 101, 0.08);
+}
+
+.valueCard > span {
+  color: #b18a35;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.valueCard h3 {
+  margin-top: 22px;
+  color: #103765;
+  font-size: 20px;
+}
+
+.valueCard p {
+  margin-top: 13px;
+  color: #52606d;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Closing section */
+
+.closing {
+  padding: 75px 0;
+  background: linear-gradient(110deg, #e9eff7, #f5f5f0);
+  border-top: 1px solid #dce3ec;
+}
+
+.closingContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.closingContent > div {
+  max-width: 700px;
+}
+
+.closingContent h2 {
+  color: #103765;
+  font-size: clamp(28px, 3.5vw, 40px);
+  line-height: 1.25;
+}
+
+.closingContent p {
+  margin-top: 15px;
+  color: #52606d;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.closingButton {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  color: #ffffff;
+  background: #174a8b;
+  border: 1px solid #174a8b;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.closingButton:hover {
+  background: #103765;
+  transform: translateY(-2px);
+}
+
+.closingButton:focus-visible {
+  outline: 3px solid #d5ad54;
+  outline-offset: 4px;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+  .storyGrid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 75px 0;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .storyGrid {
+    gap: 30px;
+  }
+
+  .purpose {
+    padding: 75px 0;
+  }
+
+  .purposeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .purposeCard {
+    min-height: auto;
+    padding: 30px;
+  }
+
+  .closingContent {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 65px 0;
+  }
+
+  .heroContent > p {
+    font-size: 15px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .valueCard {
+    padding: 25px;
+  }
+
+  .closing {
+    padding: 60px 0;
+  }
+}

@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import styles from "./page.module.css";
 
@@ -28,39 +29,9 @@ const programmes = [
   },
 ];
 
-export default function Home() {
+function Home() {
   return (
-    <main>
-      <header className={styles.header}>
-        <div className={`container ${styles.navContainer}`}>
-          <a href="#home" className={styles.brand} aria-label="FVN home">
-            <Image
-              src="/logos/fvn-logo.png"
-              alt="Future Voice Network logo"
-              width={64}
-              height={64}
-              priority
-              className={styles.logo}
-            />
-            <span className={styles.brandName}>
-              Future Voice
-              <strong>Network</strong>
-            </span>
-          </a>
-
-          <nav className={styles.navigation} aria-label="Main navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#programmes">Programmes</a>
-            <a href="#get-involved">Get Involved</a>
-          </nav>
-
-          <a href="#get-involved" className={styles.navButton}>
-            Join Our Mission
-          </a>
-        </div>
-      </header>
-
+    <>
       <section id="home" className={styles.hero}>
         <div className={`container ${styles.heroContent}`}>
           <div className={styles.heroText}>
@@ -105,7 +76,9 @@ export default function Home() {
                   className={styles.heroLogo}
                 />
               </div>
-              <span className={styles.visualLabel}>FUTURE VOICE NETWORK</span>
+              <span className={styles.visualLabel}>
+                FUTURE VOICE NETWORK
+              </span>
               <h2>Opening doors through education.</h2>
               <span className={styles.visualAccent}></span>
             </div>
@@ -176,33 +149,13 @@ export default function Home() {
             </p>
           </div>
 
-          <a href="mailto:info@futurevoicenetwork.org" className={styles.involvedButton}>
+          <a href="/get-involved" className={styles.involvedButton}>
             Get Involved
           </a>
         </div>
       </section>
-
-      <footer className={styles.footer}>
-        <div className={`container ${styles.footerContent}`}>
-          <div className={styles.footerBrand}>
-            <Image
-              src="/logos/fvn-logo.png"
-              alt="Future Voice Network logo"
-              width={48}
-              height={48}
-              className={styles.footerLogo}
-            />
-            <div>
-              <strong>Future Voice Network</strong>
-              <p>Supporting students through education.</p>
-            </div>
-          </div>
-
-          <p className={styles.copyright}>
-            © 2026 Future Voice Network. All rights reserved.
-          </p>
-        </div>
-      </footer>
-    </main>
+    </>
   );
 }
+
+export default Home;

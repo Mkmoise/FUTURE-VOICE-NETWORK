@@ -604,3 +604,212 @@
     line-height: 1.7;
   }
 }
+
+/* =========================================
+   FVN DESIGN POLISH — CONTRAST & CONSISTENCY
+========================================= */
+
+/* Header and brand */
+.header {
+  background: rgba(245, 245, 240, 0.98);
+}
+
+.brandName {
+  color: #174A8B;
+}
+
+.brandName strong {
+  color: #263238;
+}
+
+.navigation a {
+  color: #263238 !important;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #174A8B !important;
+}
+
+/* Shared button styling */
+.navButton,
+.primaryButton,
+.secondaryButton,
+.involvedButton {
+  min-height: 48px;
+  padding: 0 24px;
+  border-radius: 7px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease,
+    transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navButton,
+.primaryButton {
+  background: #174A8B;
+  color: #FFFFFF !important;
+  box-shadow: 0 5px 14px rgba(23, 74, 139, 0.12);
+}
+
+.navButton:hover,
+.primaryButton:hover {
+  background: #103765;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(23, 74, 139, 0.2);
+}
+
+.secondaryButton {
+  background: transparent;
+  border: 1px solid #174A8B;
+  color: #174A8B !important;
+}
+
+.secondaryButton:hover {
+  background: #174A8B;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+.involvedButton {
+  background: #D5AD54;
+  color: #103765 !important;
+}
+
+.involvedButton:hover {
+  background: #E5C77F;
+  color: #103765 !important;
+  transform: translateY(-2px);
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(120deg, #F5F5F0 0%, #EAF0F6 100%);
+}
+
+.heroText h1 {
+  color: #263238 !important;
+}
+
+.heroText h1 span {
+  color: #174A8B !important;
+}
+
+.heroText > p {
+  color: #52606D !important;
+}
+
+.eyebrow {
+  color: #174A8B !important;
+}
+
+.heroNote {
+  color: #52606D !important;
+}
+
+/* Hero visual */
+.visualCard {
+  background: linear-gradient(145deg, #FFFFFF, #EEF2F6);
+}
+
+.visualLabel {
+  color: #174A8B !important;
+}
+
+.visualCard h2 {
+  color: #263238 !important;
+}
+
+/* About and programmes */
+.sectionHeading h2,
+.programmeHeading h2 {
+  color: #263238 !important;
+}
+
+.aboutText p,
+.programmeHeading > p {
+  color: #52606D !important;
+}
+
+.programmes {
+  background: #F5F5F0;
+}
+
+.programmeCard {
+  background: #FFFFFF;
+}
+
+.programmeCard h3 {
+  color: #174A8B !important;
+}
+
+.programmeCard p {
+  color: #52606D !important;
+}
+
+/* Get involved */
+.involved {
+  background: linear-gradient(115deg, #103765, #174A8B);
+  color: #FFFFFF;
+}
+
+.involvedContent h2 {
+  color: #FFFFFF !important;
+}
+
+.involvedContent p {
+  color: #E5EAF0 !important;
+}
+
+.involved .eyebrow {
+  color: #E5C77F !important;
+}
+
+/* Footer */
+.footer {
+  background: #192B40;
+  color: #FFFFFF;
+}
+
+.footerBrand strong {
+  color: #FFFFFF !important;
+}
+
+.footerBrand p,
+.copyright {
+  color: #D0D8E1 !important;
+}
+
+/* Accessibility */
+.navButton:focus-visible,
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible,
+.involvedButton:focus-visible,
+.navigation a:focus-visible {
+  outline: 3px solid #D5AD54;
+  outline-offset: 4px;
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+  .navContainer {
+    gap: 14px;
+  }
+
+  .heroContent {
+    gap: 36px;
+  }
+
+  .heroText h1 {
+    letter-spacing: -1px;
+  }
+
+  .aboutContent {
+    gap: 30px;
+  }
+
+  .involvedContent {
+    gap: 26px;
+  }
+}
