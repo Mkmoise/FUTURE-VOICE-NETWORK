@@ -18,8 +18,8 @@ export default function Header() {
 
         <nav className="main-navigation" aria-label="Main navigation">
           <Link href="/">Home</Link>
-          <Link href="/about">About</Link>
           <Link href="/programmes">Programmes</Link>
+          <Link href="/about">About</Link>
           <Link href="/get-involved">Get Involved</Link>
         </nav>
       </div>

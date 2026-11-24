@@ -1,0 +1,322 @@
+
+/* FUTURE VOICE NETWORK PROGRAMMES PAGE*/
+
+/* Hero */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 105px 0 100px;
+  background: linear-gradient(115deg, #f5f5f0 0%, #e9eff7 100%);
+  border-bottom: 1px solid #dce3ec;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  right: -110px;
+  top: -130px;
+  border: 1px solid rgba(23, 74, 139, 0.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 35px rgba(23, 74, 139, 0.025),
+    0 0 0 75px rgba(23, 74, 139, 0.02);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #b18a35;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+}
+
+.hero h1 {
+  max-width: 900px;
+  color: #103765;
+  font-size: clamp(38px, 5.5vw, 65px);
+  font-weight: 750;
+  line-height: 1.12;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #174a8b;
+}
+
+.heroContent > p {
+  max-width: 680px;
+  margin-top: 25px;
+  color: #52606d;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.heroLine {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 38px;
+  color: #103765;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.heroLine span {
+  display: block;
+  width: 42px;
+  height: 3px;
+  background: #d5ad54;
+}
+
+/* Introduction and programme cards */
+
+.introduction {
+  background: #f5f5f0;
+}
+
+.introContent {
+  max-width: 760px;
+  margin-bottom: 55px;
+}
+
+.introContent h2 {
+  color: #103765;
+  font-size: clamp(29px, 3.5vw, 42px);
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.introContent > p {
+  margin-top: 20px;
+  color: #52606d;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.programmesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.programmeCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 290px;
+  padding: 34px 30px;
+  background: #ffffff;
+  border: 1px solid #e3e8ee;
+  border-radius: 7px;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.programmeCard:hover {
+  transform: translateY(-5px);
+  border-color: #d5ad54;
+  box-shadow: 0 12px 30px rgba(16, 55, 101, 0.08);
+}
+
+.cardNumber {
+  color: #b18a35;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.cardLine {
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin-top: 20px;
+  background: #d5ad54;
+}
+
+.programmeCard h3 {
+  margin-top: 25px;
+  color: #103765;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.programmeCard p {
+  margin-top: 14px;
+  color: #52606d;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+/* Our Approach */
+
+.approach {
+  padding: 95px 0;
+  background: linear-gradient(120deg, #103765, #174a8b);
+}
+
+.approachContent {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 85px;
+  align-items: start;
+}
+
+.approach .eyebrow {
+  color: #e5c779;
+}
+
+.approachHeading h2 {
+  color: #ffffff;
+  font-size: clamp(29px, 3.5vw, 42px);
+  line-height: 1.25;
+  letter-spacing: -1px;
+}
+
+.approachText {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.approachText p {
+  color: #e0e8f1;
+  font-size: 16px;
+  line-height: 1.95;
+}
+
+/* Closing section */
+
+.closing {
+  padding: 75px 0;
+  background: linear-gradient(110deg, #e9eff7, #f5f5f0);
+  border-top: 1px solid #dce3ec;
+}
+
+.closingContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.closingContent > div {
+  max-width: 700px;
+}
+
+.closingContent h2 {
+  color: #103765;
+  font-size: clamp(28px, 3.5vw, 40px);
+  line-height: 1.25;
+}
+
+.closingContent p {
+  margin-top: 15px;
+  color: #52606d;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.closingButton {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  color: #ffffff;
+  background: #174a8b;
+  border: 1px solid #174a8b;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.closingButton:hover {
+  background: #103765;
+  transform: translateY(-2px);
+}
+
+.closingButton:focus-visible {
+  outline: 3px solid #d5ad54;
+  outline-offset: 4px;
+}
+
+/* Responsive design */
+
+@media (max-width: 900px) {
+  .programmesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .approachContent {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 75px 0;
+  }
+
+  .hero h1 {
+    letter-spacing: -1px;
+  }
+
+  .programmeCard {
+    min-height: 270px;
+    padding: 30px;
+  }
+
+  .approach {
+    padding: 75px 0;
+  }
+
+  .closingContent {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .programmesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .programmeCard {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 65px 0;
+  }
+
+  .heroContent > p {
+    font-size: 15px;
+  }
+
+  .closing {
+    padding: 60px 0;
+  }
+}
