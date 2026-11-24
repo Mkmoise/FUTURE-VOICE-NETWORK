@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,7 +16,7 @@ export default function Footer() {
           </Link>
 
           <p>
-            Supporting Banyamulenge students in accessing and continuing
+            Supporting young refugee students in accessing and continuing
             their education.
           </p>
         </div>
@@ -33,7 +32,7 @@ export default function Footer() {
         <div className="footer-mission">
           <h2>Our Mission</h2>
           <p>
-            To support Banyamulenge students in accessing and continuing
+            To support young refugee students in accessing and continuing
             their education.
           </p>
         </div>

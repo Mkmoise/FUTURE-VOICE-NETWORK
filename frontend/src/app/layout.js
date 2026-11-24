@@ -1,4 +1,3 @@
-
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -23,11 +22,11 @@ export const metadata = {
     template: "%s | Future Voice Network",
   },
   description:
-    "Future Voice Network supports Banyamulenge students in accessing and continuing their education through financial support, mentorship, and educational opportunities.",
+    "Future Voice Network supports refugee students in accessing and continuing their education through financial support, mentorship, and educational opportunities.",
   keywords: [
     "Future Voice Network",
     "FVN",
-    "Banyamulenge students",
+    "refugee students",
     "education support",
     "student mentorship",
     "Kenya",
@@ -37,7 +36,7 @@ export const metadata = {
     siteName: "Future Voice Network",
     title: "Future Voice Network",
     description:
-      "Supporting Banyamulenge students in accessing and continuing their education.",
+      "Supporting refugee students in accessing and continuing their education.",
     locale: "en_KE",
   },
 };
