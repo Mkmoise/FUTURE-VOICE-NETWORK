@@ -1,4 +1,5 @@
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export const metadata = {
   title: "About Us",
@@ -9,7 +10,44 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
+
       {/* About Hero */}
+      <section className={styles.hero}>
+        <div className={`container ${styles.heroContent}`}>
+          <div className={styles.heroText}>
+            <span className={styles.eyebrow}>GET TO KNOW US</span>
+
+            <h1>
+              Young minds. Shared purpose.
+              <span> A future built through education.</span>
+            </h1>
+
+            <p>
+              We came together because we believe every young person
+              deserves an opportunity to access education and pursue
+              a better future.
+            </p>
+
+            <div className={styles.heroLine}>
+              <span />
+              Education · Opportunity · Community
+            </div>
+          </div>
+
+          <div className={styles.heroImage}>
+            <Image
+              src="/logos/fvn-about.jpeg"
+              alt="Future Voice Network members"
+              width={900}
+              height={650}
+              priority
+              className={styles.aboutImage}
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* About Hero 
       <section className={styles.hero}>
         <div className={`container ${styles.heroContent}`}>
           <span className={styles.eyebrow}>GET TO KNOW US</span>
@@ -30,7 +68,7 @@ export default function AboutPage() {
             Education · Opportunity · Community
           </div>
         </div>
-      </section>
+      </section>  */}
 
       {/* Our Story */}
       <section className={`section ${styles.story}`}>
@@ -44,7 +82,7 @@ export default function AboutPage() {
             <h2>Where our journey began.</h2>
             <span className={styles.headingLine} />
           </div>
-      
+
           {/* First paragraphs — right column */}
           <div className={styles.storyText}>
             <p>
@@ -58,7 +96,7 @@ export default function AboutPage() {
               countries, strengthening its commitment to unity,
               collaboration and shared progress through education.
             </p>
-      
+
             <p>
               They recognised a problem that has affected, and continues
               to affect, young refugee students throughout their
@@ -67,7 +105,7 @@ export default function AboutPage() {
               awareness within the community about the importance
               of education.
             </p>
-      
+
             <p>
               These are some of the challenges Future Voice Network is
               committed to addressing. We believe that by working
@@ -76,13 +114,13 @@ export default function AboutPage() {
               access and continue their education.
             </p>
           </div>
-      
+
           {/* Second heading — left column */}
           <div className={styles.sectionHeading}>
             <h2>Why We Were Established.</h2>
             <span className={styles.headingLine} />
           </div>
-      
+
           {/* Second paragraphs — right column */}
           <div className={styles.storyText}>
             <p>
@@ -96,7 +134,7 @@ export default function AboutPage() {
               access the information, guidance and support needed to
               continue their education.
             </p>
-      
+
             <p>
               Our work is guided by the belief that education can
               transform individual lives and strengthen entire
@@ -107,8 +145,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      
-      
+
+
       {/* Mission and Vision */}
       <section className={styles.purpose}>
         <div className={`container ${styles.purposeContent}`}>
