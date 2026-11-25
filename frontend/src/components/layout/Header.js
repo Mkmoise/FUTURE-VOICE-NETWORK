@@ -1,4 +1,3 @@
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,6 +20,7 @@ export default function Header() {
           <Link href="/programmes">Programmes</Link>
           <Link href="/about">About</Link>
           <Link href="/get-involved">Get Involved</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </div>
     </header>

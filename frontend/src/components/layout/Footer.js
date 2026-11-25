@@ -27,6 +27,7 @@ export default function Footer() {
           <Link href="/programmes">Programmes</Link>
           <Link href="/about">About Us</Link>
           <Link href="/get-involved">Get Involved</Link>
+          <Link href="/contact">Contact</Link>
         </div>
 
         <div className="footer-mission">

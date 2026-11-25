@@ -44,16 +44,16 @@ function Home() {
             </h1>
 
             <p>
-              We support Banyamulenge students in accessing and continuing
+              We support refugee students in accessing and continuing
               their education through financial support, mentorship and
               educational opportunities.
             </p>
 
             <div className={styles.heroActions}>
               <a href="#about" className={styles.primaryButton}>
-                Discover Our Mission
+                Discover Our Identity
               </a>
-              <a href="#programmes" className={styles.secondaryButton}>
+              <a href="/programmes" className={styles.secondaryButton}>
                 Explore Programmes
               </a>
             </div>
@@ -95,7 +95,7 @@ function Home() {
 
           <div className={styles.aboutText}>
             <p>
-              Future Voice Network is committed to supporting Banyamulenge
+              Future Voice Network is committed to supporting refugee
               students in accessing and continuing their education.
             </p>
             <p>

@@ -1,0 +1,308 @@
+
+/* =========================================
+   FUTURE VOICE NETWORK
+   GET INVOLVED PAGE
+========================================= */
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 115px 0 105px;
+  background: linear-gradient(
+    120deg,
+    #103765 0%,
+    #174a8b 60%,
+    #245b96 100%
+  );
+  color: #ffffff;
+}
+
+.heroContent {
+  max-width: 900px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #d5ad54;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  max-width: 850px;
+  margin: 0 0 25px;
+  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  line-height: 1.12;
+  font-weight: 750;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #d5ad54;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.heroLine {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 38px;
+  color: #ffffff;
+  font-size: 0.83rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.heroLine span {
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  background: #d5ad54;
+}
+
+/* Introduction */
+
+.introduction {
+  background: #f5f5f0;
+}
+
+.introContent {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.introContent h2 {
+  margin: 0 0 24px;
+  color: #103765;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.introContent p {
+  margin: 0 auto 18px;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* Opportunities */
+
+.opportunities {
+  padding: 100px 0;
+  background: #ffffff;
+}
+
+.sectionHeading {
+  max-width: 720px;
+  margin-bottom: 55px;
+}
+
+.sectionHeading h2 {
+  margin: 0 0 18px;
+  color: #103765;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.sectionHeading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.opportunitiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.opportunityCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 330px;
+  padding: 35px 30px;
+  border: 1px solid rgba(23, 74, 139, 0.1);
+  border-radius: 12px;
+  background: #f5f5f0;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.opportunityCard:hover {
+  transform: translateY(-6px);
+  border-color: #d5ad54;
+  box-shadow: 0 15px 35px rgba(16, 55, 101, 0.09);
+}
+
+.cardNumber {
+  color: #174a8b;
+  font-size: 1.8rem;
+  font-weight: 750;
+}
+
+.cardLine {
+  display: block;
+  width: 42px;
+  height: 3px;
+  margin: 20px 0;
+  background: #d5ad54;
+}
+
+.opportunityCard h3 {
+  margin: 0 0 15px;
+  color: #103765;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.opportunityCard p {
+  margin: 0 0 25px;
+  color: #64748b;
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
+
+.cardAction {
+  margin-top: auto;
+  color: #174a8b;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+/* Closing Section */
+
+.closing {
+  padding: 85px 0;
+  background: linear-gradient(
+    120deg,
+    #103765 0%,
+    #174a8b 100%
+  );
+  color: #ffffff;
+}
+
+.closingContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+
+.closingContent > div {
+  max-width: 700px;
+}
+
+.closingContent h2 {
+  margin: 0 0 18px;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.closingContent p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.closingButton {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  border: 2px solid #d5ad54;
+  border-radius: 6px;
+  background: #d5ad54;
+  color: #103765;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.closingButton:hover {
+  transform: translateY(-3px);
+  background: transparent;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .opportunitiesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .closingContent {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 85px 0 75px;
+  }
+
+  .hero h1 {
+    font-size: 2.65rem;
+    letter-spacing: -1.2px;
+  }
+
+  .hero p {
+    font-size: 0.98rem;
+  }
+
+  .introduction {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .opportunities {
+    padding: 70px 0;
+  }
+
+  .opportunitiesGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .opportunityCard {
+    min-height: auto;
+    padding: 30px 25px;
+  }
+
+  .closing {
+    padding: 70px 0;
+  }
+
+  .closingContent h2 {
+    font-size: 2rem;
+  }
+}
