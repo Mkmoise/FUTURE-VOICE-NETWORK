@@ -44,6 +44,7 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Future Voice Network.
           All rights reserved.
         </p>
+        
       </div>
     </footer>
   );

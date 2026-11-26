@@ -222,6 +222,13 @@
   font-size: 15px;
   line-height: 1.85;
 }
+.purposeCard table {
+  max-width: 450px;
+  margin-top: 15px;
+  color: #e0e8f1;
+  font-size: 15px;
+  line-height: 1.85;
+}
 
 .cardAccent {
   position: absolute;

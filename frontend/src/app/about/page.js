@@ -164,7 +164,7 @@ export default function AboutPage() {
             <article className={styles.purposeCard}>
               <span className={styles.cardNumber}>01</span>
               <h3>Our Mission</h3>
-              <p>
+              <table>
                 <ol>
                   <li>To inspire young refugees to pursue higher education and believe in their academic potential.</li>
                   <li>To provide academic counselling, mentorship and information about educational opportunities.</li>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                   <li>To promote unity, collaboration and peer support among refugee students from different backgrounds.</li>
                   <li>To build partnerships that can expand access to scholarships and other educational opportunities.</li>
                 </ol>
-              </p>
+              </table>
               <span className={styles.cardAccent} />
             </article>
 

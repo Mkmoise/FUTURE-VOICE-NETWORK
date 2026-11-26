@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -46,26 +47,39 @@ export default function ProgrammesPage() {
       {/* Programmes Hero */}
       <section className={styles.hero}>
         <div className={`container ${styles.heroContent}`}>
-          <span className={styles.eyebrow}>OUR PROGRAMMES</span>
+          <div className={styles.heroText}>
+            <span className={styles.eyebrow}>OUR PROGRAMMES</span>
 
-          <h1>
-            Creating pathways.
-            <span> Opening doors through education.</span>
-          </h1>
+            <h1>
+              Creating pathways.
+              <span> Opening doors through education.</span>
+            </h1>
 
-          <p>
-            Through educational guidance, learning support and opportunities
-            for young people to grow, Future Voice Network works towards a
-            future where young refugees can pursue their academic potential.
-          </p>
+            <p>
+              Through educational guidance, learning support and opportunities
+              for young people to grow, Future Voice Network works towards a
+              future where young refugees can pursue their academic potential.
+            </p>
 
-          <div className={styles.heroLine}>
-            <span />
-            Guidance · Learning · Opportunity
+            <div className={styles.heroLine}>
+              <span />
+              Guidance · Learning · Opportunity
+            </div>
+          </div>
+
+          <div className={styles.heroImage}>
+            <Image
+              src="/logos/fvn-programmes.jpeg"
+              alt="Future Voice Network programmes"
+              width={900}
+              height={650}
+              priority
+              className={styles.programmesImage}
+            />
           </div>
         </div>
       </section>
-
+      
       {/* Programme Introduction */}
       <section className={`section ${styles.introduction}`}>
         <div className="container">
