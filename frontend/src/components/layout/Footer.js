@@ -41,7 +41,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; {new Date().getFullYear()} Future Voice Network.
+          &copy; 2026 Future Voice Network.
           All rights reserved.
         </p>
         
